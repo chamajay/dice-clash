@@ -20,6 +20,6 @@ player.
 
 |                  Main Screen                  |                 Game Settings                 |                  Game Screen                  |                    Results                    |
 |:---------------------------------------------:|:---------------------------------------------:|:---------------------------------------------:|:---------------------------------------------:|
-| <img src="screenshots/ss_2.png" height="400"> | <img src="screenshots/ss_3.png" height="400"> | <img src="screenshots/ss_1.png" height="400"> | <img src="screenshots/ss_4.png" height="400"> |
+| ![Main Screen](screenshots/ss_2.png) | ![Game Settings](screenshots/ss_3.png) | ![Game Screen](screenshots/ss_1.png) | ![Results](screenshots/ss_4.png) |
 
 </div>
