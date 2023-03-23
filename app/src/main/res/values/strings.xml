@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Dice Clash</string>
+    <string name="new_game">New Game</string>
+    <string name="about">About</string>
+    <string name="developer">Chamath Jayasena</string>
+    <string name="dev_reg_no">20211387 | w1898955</string>
+    <string name="plagiarism_declaration">I confirm that I understand what plagiarism is and have read and understood the section on Assessment Offences in the Essential Information for Students. The work that I have submitted is entirely my own. Any work from other authors is duly referenced and acknowledged.</string>
+    <string name="winning_points">Winning points:</string>
+    <string name="winning_points_def">101</string>
+    <string name="computer_mode">Computer mode:</string>
+    <string name="computer_mode_rand">Random</string>
+    <string name="computer_mode_intelli">Intelligent</string>
+    <string name="lets_play">Let\'s Play!</string>
+    <string name="you_lose">You lose</string>
+    <string name="you_win">You win!</string>
+    <string name="human_computer_wins">H:10/C:5</string>
+    <string name="human">Human -&#160;</string>
+    <string name="human_score_def">0</string>
+    <string name="computer">Computer -&#160;</string>
+    <string name="computer_score_def">0</string>
+    <string name="robot_image">Robot image</string>
+    <string name="computer_die5">Computer die5</string>
+    <string name="computer_die4">Computer die4</string>
+    <string name="computer_die3">Computer die3</string>
+    <string name="computer_die2">Computer die2</string>
+    <string name="computer_die1">Computer die1</string>
+    <string name="human_die5">Human die5</string>
+    <string name="human_die4">Human die4</string>
+    <string name="human_die3">Human die3</string>
+    <string name="human_die2">Human die2</string>
+    <string name="human_die1">Human die1</string>
+    <string name="score">Score</string>
+    <string name="throw_txt">Throw</string>
+</resources>

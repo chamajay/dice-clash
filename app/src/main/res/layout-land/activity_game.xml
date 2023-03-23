@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/wins_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/human_computer_wins"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/human"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/human_score_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/human_score_def"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/computer"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/computer_score_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/computer_score_def"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/computer_dice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/human_dice_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/c_die1_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="8dp"
+            android:paddingStart="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="1.5dp"
+            android:contentDescription="@string/computer_die1" />
+
+        <ImageView
+            android:id="@+id/c_die2_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="8dp"
+            android:paddingStart="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="1.5dp"
+            android:contentDescription="@string/computer_die2" />
+
+        <ImageView
+            android:id="@+id/c_die3_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="8dp"
+            android:paddingStart="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="1.5dp"
+            android:contentDescription="@string/computer_die3" />
+
+        <ImageView
+            android:id="@+id/c_die4_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="8dp"
+            android:paddingStart="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="1.5dp"
+            android:contentDescription="@string/computer_die4" />
+
+        <ImageView
+            android:id="@+id/c_die5_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="8dp"
+            android:paddingStart="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="1.5dp"
+            android:contentDescription="@string/computer_die5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/human_dice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btns_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9">
+
+        <ImageView
+            android:id="@+id/h_die1_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="8dp"
+            android:paddingStart="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="1.5dp"
+            android:contentDescription="@string/human_die1" />
+
+        <ImageView
+            android:id="@+id/h_die2_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="8dp"
+            android:paddingStart="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="1.5dp"
+            android:contentDescription="@string/human_die2" />
+
+        <ImageView
+            android:id="@+id/h_die3_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="8dp"
+            android:paddingStart="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="1.5dp"
+            android:contentDescription="@string/human_die3" />
+
+        <ImageView
+            android:id="@+id/h_die4_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="8dp"
+            android:paddingStart="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="1.5dp"
+            android:contentDescription="@string/human_die4" />
+
+        <ImageView
+            android:id="@+id/h_die5_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="8dp"
+            android:paddingStart="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="1.5dp"
+            android:contentDescription="@string/human_die5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btns_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95">
+
+        <Button
+            android:id="@+id/throw_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:width="110dp"
+            android:text="@string/throw_txt" />
+
+        <Button
+            android:id="@+id/score_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="110dp"
+            android:text="@string/score" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
